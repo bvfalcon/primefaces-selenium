@@ -87,7 +87,7 @@ public abstract class AbstractComponent extends AbstractPrimePageFragment {
                         element.getAttribute("id") + "', '" + event + "')");
         }
         catch (JavascriptException ex) {
-            if (ex.getMessage().contains("javascript error: PrimeFaces.csp.hasRegisteredAjaxifiedEvent is not a function")) {
+            if (ex.getMessage().contains("PrimeFaces.csp.hasRegisteredAjaxifiedEvent is not a function")) {
                 System.err.println("WARNING: 'pfselenium.core.csp.js' missing - not added to the page");
             }
             else {
